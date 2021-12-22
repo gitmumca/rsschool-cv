@@ -1,0 +1,14 @@
+header nav {
+  background-color: #6eb5c0;
+  height: 35px;
+  line-height: 35px;
+}
+
+header a {
+  color: #e2e8e4;
+  margin: 10px;
+}
+
+header nav a:hover {
+  color: #006c84;
+}
