@@ -12,3 +12,46 @@ I love programming and have always been interested in psychology. Developing tec
 
 > _If you are born without wings, do not stop them from growing_\
 > _(fr.) Si vous êtes nées sans ailes, ne faites rien pour les empêcher de pousser (by Coco Chanel)_
+
+## Skills
+
+- Borland Delphi 6, C++ Builder
+- 1С Enterprise 8.2, SQL, XML, COM
+- HTML5, CSS3, JavaScript Basics
+- Git, GitHub
+
+## Code examples
+
+```javascript
+function cur(n) {
+  return n == 1 ? 1 : n + cur(n - 1);
+}
+
+function sumTriangularNumbers(n) {
+  return n <= 0 ? 0 : cur(n) + sumTriangularNumbers(n - 1);
+}
+```
+
+## Education
+
+### [**Polotsk State University**](https://www.psu.by/en/)
+
+_Information Technology Faculty_\
+_Specialization: Computing systems and Networks_
+
+### EPAM
+
+_SoftWare Testing Introduction_\
+_WebDriver (in process)_
+
+## Experience
+
+### 2006 – 2021
+
+1C Enterprise 8.2\
+Development software for automating business processes and accounting
+
+## Languages
+
+- Russian - Native
+- English - B1 ([B2 in process](https://skyeng.ru/))
