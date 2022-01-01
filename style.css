@@ -1,0 +1,341 @@
+ul li{list-style: none;}
+
+:root {
+	--background-header: #14274E;
+	--background-article: #394867;
+	--background-mark: orange;
+	--background-text: #9BA4B4;
+	--text-light: #F1F6F9;
+} 
+
+@keyframes body_background {
+	from {
+		background: var(--text-light);
+	}
+	to {
+		background: var(--background-header);
+	}
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+	font-family: Arial, "Helvetica Neve", Helvetica, san-serif;
+  	background: linear-gradient(135deg, var(--background-header), var(--text-light));
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.header {
+	background-color: var(--background-header);
+	padding: 8px;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-around;	
+  flex-wrap: wrap;
+}
+
+.header_a {
+	color: var(--background-text);
+	height: 30px;
+	margin: 10px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.header_a:hover, .educ_a:hover {
+	color: var(--background-mark);
+	text-shadow: 2px 2px 2px var(--background-header);
+}
+
+@media (min-width: 800px) {
+.main_row {
+	display: flex;
+	flex-direction: row;
+}
+}
+
+.container_left {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background-article);
+	min-width: 360px;
+	min-height: 600px;
+}
+
+.foto_border{
+	margin: 25px auto 0;
+	background-color: var(--background-text);
+
+	height: 400px;
+	width: 300px;
+	padding: 7px;
+}
+
+.foto {
+	height: 400px;
+}
+
+.marina {
+	padding: 0px 0 0px 35px;
+	font-size: 40px;
+	font-style: normal;
+  	font-weight: normal;
+    letter-spacing: 3px;
+    line-height: 60px;
+
+	color: var(--text-light);
+}
+
+.left_line {
+	display: flex;
+	margin: 15px 0;
+}
+
+.left_orange {
+	margin: 13px 0;
+	padding: 10px 0; 
+	flex: 1;
+	background-color: var(--background-mark);
+}
+
+.left_grey {
+	padding: 10px 0 10px 10px; 
+	flex: 15;
+	background-color: var(--background-text);
+	color: var(--background-article);
+}
+
+.contact li:nth-child(1) {
+	background: url('img/gmail36.svg') left no-repeat;
+}
+
+.contact li:nth-child(2) {
+	background: url('img/iphone36.png') left no-repeat;
+}
+
+.contact li:nth-child(3) {
+	background: url('img/vk36.svg') left no-repeat;
+}
+
+.contact li:nth-child(4) {
+	background: url('img/github36.svg') left no-repeat;
+}
+
+.contact a {
+	display: block;
+	font-size: 18px;
+    line-height: 30px;
+	color: var(--text-light);
+	margin: 12px 0 12px 45px;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.contact a:hover {
+	color: var(--background-mark);
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.line_star {
+	display: flex;
+}
+
+.star_list {
+	color: var(--background-mark);
+	margin: 14px 0 0 0;
+	letter-spacing: 12px;
+}
+
+.star_orange {
+	color: var(--background-mark);
+	margin: 14px 10px 0 0;
+}
+
+.star_grey {
+	color: var(--background-text);
+	margin: 14px 10px 0 0;
+}
+
+.skill_name {
+	margin: 17px 0 0 38px;
+	color: var(--text-light);
+	opacity: 0.8;
+	font-size: 15px;
+	min-width: 145px;
+}
+
+.vertical {
+	background-color: var(--background-article);
+	min-width: 30px;
+}
+
+.container_right {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background-text);
+
+	padding: 10px 0 0 0;
+}
+
+.right_line {
+	display: flex;
+}
+
+.right_orange {
+	margin: 13px 0;
+	flex: 1;
+	background-color: var(--background-mark);
+}
+
+.right_grey {
+	padding: 10px 0 10px 10px; 
+	flex: 30;
+	background-color: var(--background-article);
+	color: var(--background-text);
+}
+
+.about_text {
+	padding: 5px 45px 5px 25px;
+	line-height: 23px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: justify;
+	color: var(--background-article);
+}
+
+.skill_li li::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	opacity: 0.8;
+	background-color: var(--background-mark);
+	display: inline-block;
+	margin: 0 10px 2px 0;
+}
+
+.skill_li li, 
+.language_li li {
+	line-height: 20px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 3px 0 3px 0;
+	color: var(--background-article);
+}
+
+.education_li li, 
+.experience_li li {
+	line-height: 15px;
+	font-weight: 400;
+	text-align: left;
+	padding: 3px 0 3px 10px;
+	color: var(--background-article);
+}
+
+.experience_li>.exp_year {
+	font-weight: 600;
+}
+
+.educ_a, 
+.experience_li>.exp_year   {
+	line-height: 25px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	margin: 0 0 0 -20px;
+	color: var(--background-article);
+	text-decoration: none;
+}
+
+.code {
+	margin: 0 20px;
+	width: 90%;
+
+	font-size: 13px;
+	font-weight: 100;
+	font-style: italic;
+	letter-spacing: 1px;
+	color: var(--background-article);
+}
+
+.textTask {
+	font-style: normal;
+}
+
+.tab {
+	margin: 0 20px 0 25px;
+}
+
+p {
+	margin: 10px;
+}
+
+.container_footer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: 	wrap;
+
+	background-color: var(--background-header);
+}
+
+.container_footer a, .f_2021 {
+	margin: 20px;
+}
+
+.container_home {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	border: 3px solid var(--background-text);
+
+	width: 150px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.home_text {
+	margin: 0 0 0 30px;
+	line-height: 44px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--text-light);
+}
+
+.icon_home {
+	padding: 8px 17px 0 0;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+}
+
+.rs_school {
+	max-height: 40px;
+	width: 100px;
+	text-decoration: none;
+}
+
+.button {
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: var(--background-text);
+	border-radius: 25px;
+}
+
+.f_2021 {
+	padding: auto;
+	line-height: 44px;
+	letter-spacing: 0.2em;
+	color: var(--text-light);
+}

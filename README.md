@@ -1,1 +1,1 @@
-# rsschool-cv
+https://gitmumca.github.io/rsschool-cv/
